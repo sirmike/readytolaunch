@@ -1,8 +1,25 @@
- /* Style the video: 100% width and height to cover the entire window */
+/* Style the video: 100% width and height to cover the entire window */
 body {
   margin: 0;
   color: white;
   font-family: "Open Sans", sans-serif;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  background: #0f0d0b;
+  color: white;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 27px;
+}
+
+span.wide {
+  display: inline-block;
+  width: 50px;
 }
 
 #video {
@@ -13,50 +30,66 @@ body {
   min-height: 100%;
 }
 
-/* Add some content at the bottom of the video/page */
-#footer {
-  position: fixed;
-  bottom: 0;
-  background: #0f0d0b;
-  color: white;
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-  font-size: 27px;
+@media(min-width: 900px) {
+  .content {
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    position: fixed;
+    width: 900px;
+    font-size: 16px;
+  }
+
+  .content p a span {
+    display: inline-block;
+    width: 110px;
+    vertical-align: middle;
+    padding: 10px;
+  }
+
+  #logo {
+    float: left;
+  }
+
+  #about {
+    float: right;
+    width: 550px;
+  }
 }
 
-.content {
-  top: 50%;
-  left: 50%;
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  position: fixed;
-  width: 900px;
-  font-size: 16px;
-}
+@media(max-width: 899px){
+  .content {
+    position: absolute;
+    font-size: 16px;
+    padding: 10px;
+  }
 
-.content p a span {
-  display: inline-block;
-  width: 110px;
-  vertical-align: middle;
-  padding: 10px;
-}
+  .content p a span {
+    display: inline-block;
+    width: 110px;
+    vertical-align: middle;
+    padding: 10px;
+  }
 
-span.wide {
-  display: inline-block;
-  width: 50px;
-}
+  #logo {
+    text-align: center;
+    float: left;
+    width: 100%;
+  }
 
-#logo {
-  float: left;
-}
+  #logo img {
+    width: 200px;
+  }
 
-#about {
-  float: right;
-  width: 550px;
+  #about {
+    float: left;
+  }
+  #footer {
+    font-size: 16px;
+  }
 }
-
 
 a span {
   background-position: center;
