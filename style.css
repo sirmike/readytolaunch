@@ -1,0 +1,115 @@
+ /* Style the video: 100% width and height to cover the entire window */
+body {
+  margin: 0;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+#video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+#footer {
+  position: fixed;
+  bottom: 0;
+  background: #0f0d0b;
+  color: white;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 27px;
+}
+
+.content {
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  position: fixed;
+  width: 900px;
+  font-size: 16px;
+}
+
+.content p a span {
+  display: inline-block;
+  width: 110px;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+span.wide {
+  display: inline-block;
+  width: 50px;
+}
+
+#logo {
+  float: left;
+}
+
+#about {
+  float: right;
+  width: 550px;
+}
+
+
+a span {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+a#cyberpunk span{
+  background-image:url(images/RTL-www_assets-Cyberpunk.png);
+}
+a#gwent span{
+  background-image:url(images/RTL-www_assets-Gwent.png);
+}
+a#thronebreaker span{
+  background-image:url(images/RTL-www_assets-Thronebreaker.png);
+}
+a#dyinglight span{
+  background-image:url(images/RTL-www_assets-DyingLight.png);
+}
+a#greenhell span{
+  background-image:url(images/RTL-www_assets-GreenHell.png);
+}
+a#torment span{
+  background-image:url(images/RTL-www_assets-Torment.png);
+}
+a#ethan span{
+  background-image:url(images/RTL-www_assets-EthanCarter.png);
+}
+a#hellraid span{
+  background-image:url(images/RTL-www_assets-Hellraid.png);
+}
+
+a#cyberpunk:hover span{
+  background-image:url(images/RTL-www_assets-Cyberpunk_color.png);
+}
+a#gwent:hover span{
+  background-image:url(images/RTL-www_assets-Gwent_color.png);
+}
+a#thronebreaker:hover span{
+  background-image:url(images/RTL-www_assets-Thronebreaker_color.png);
+}
+a#dyinglight:hover span{
+  background-image:url(images/RTL-www_assets-DyingLight_color.png);
+}
+a#greenhell:hover span{
+  background-image:url(images/RTL-www_assets-GreenHell_color.png);
+}
+a#torment:hover span{
+  background-image:url(images/RTL-www_assets-Torment_color.png);
+}
+a#ethan:hover span{
+  background-image:url(images/RTL-www_assets-EthanCarter_color.png);
+}
+a#hellraid:hover span{
+  background-image:url(images/RTL-www_assets-Hellraid_color.png);
+}
