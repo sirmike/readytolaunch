@@ -53,6 +53,10 @@ span.wide {
     float: left;
   }
 
+  #logo img {
+    width: 256px;
+  }
+
   #about {
     float: right;
     width: 550px;
