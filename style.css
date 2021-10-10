@@ -108,6 +108,10 @@ span.wide {
     background-position: center;
   }
 
+  #footer {
+    font-size: 14px;
+  }
+
   .content p a span {
     display: inline-block;
     vertical-align: middle;
