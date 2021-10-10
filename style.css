@@ -42,6 +42,9 @@ span.wide {
     font-size: 16px;
   }
 
+  .content p {
+    text-align: justify;
+  }
   .content p a span {
     display: inline-block;
     width: 110px;
@@ -54,12 +57,12 @@ span.wide {
   }
 
   #logo img {
-    width: 256px;
+    width: 200px;
   }
 
   #about {
     float: right;
-    width: 550px;
+    width: 630px;
   }
 }
 
@@ -95,35 +98,48 @@ span.wide {
   }
 }
 
+a {
+  display: inline-block;
+}
+
 a span {
-  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position-y: center;
 }
 
 a#cyberpunk span{
   background-image:url(images/RTL-www_assets-Cyberpunk.png);
+  width: 175px;
 }
 a#gwent span{
   background-image:url(images/RTL-www_assets-Gwent.png);
+  width: 90px;
 }
 a#thronebreaker span{
   background-image:url(images/RTL-www_assets-Thronebreaker.png);
+  width: 160px;
 }
 a#dyinglight span{
   background-image:url(images/RTL-www_assets-DyingLight.png);
+  width: 100px;
+  background-position: right;
 }
 a#greenhell span{
   background-image:url(images/RTL-www_assets-GreenHell.png);
+  width: 180px;
 }
 a#torment span{
   background-image:url(images/RTL-www_assets-Torment.png);
+  width: 120px;
 }
 a#ethan span{
   background-image:url(images/RTL-www_assets-EthanCarter.png);
+  width: 120px;
 }
 a#hellraid span{
   background-image:url(images/RTL-www_assets-Hellraid.png);
+  width: 100px;
+  background-position: right;
 }
 
 a#cyberpunk:hover span{
