@@ -131,8 +131,8 @@ span.wide {
     margin: 0px 10px 0px 0px;
   }
 
-  .content p {
-    text-align: justify;
+  .content p.images {
+    text-align: center;
   }
 }
 
