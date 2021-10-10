@@ -15,17 +15,21 @@
     <meta property="twitter:title" content="Ready To Launch">
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:image" content="https://readytolaunch.pl/images/summary_large.jpg">
-    <link rel="stylesheet" href="style.css?20211011_10">
+    <link rel="stylesheet" href="style.css?20211011_11">
     <link rel="shortcut icon" type="image/png" href="images/fox_head-96x96.png"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+    $(function() {
+      if(window.matchMedia("(min-width: 770px)").matches){
+        $('#vph').replaceWith('<video autoplay muted loop playsinline id="video"><source src="video/ReadyToLaunch_BG_2500k_H264.mp4" type="video/mp4" media="(min-width: 770px)"></video>');
+      }
+    });
+
+    </script>
   </head>
   <body>
-    <video autoplay muted loop playsinline id="video">
-      <source src="video/ReadyToLaunch_BG_2500k_H264.mp4" type="video/mp4" media="(min-width: 900px)">
-       <!-- fallback -->
-      <p>Your browser does not support HTML5 video.</p>
-    </video>
-
-    <!-- Optional: some overlay text to describe the video -->
+    <div id="vph"></div>
     <div class="content">
       <div id="logo"><img title="Ready To Launch" src="images/RTL-www_assets-_0008_RTL-logo.png"/></div>
       <div id="about">
