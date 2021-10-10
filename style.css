@@ -1,20 +1,20 @@
-/* Style the video: 100% width and height to cover the entire window */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 body {
   margin: 0;
   color: white;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+.content p {
+  text-align: justify;
 }
 
 #footer {
-  position: fixed;
-  bottom: 0;
-  background: #0f0d0b;
-  color: white;
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin-top: 60px;
+  font-size: 16px;
   text-align: center;
-  font-size: 27px;
 }
 
 span.wide {
@@ -23,14 +23,23 @@ span.wide {
 }
 
 #video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  display: none;
 }
 
 @media(min-width: 900px) {
+  #video {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
   .content {
     top: 50%;
     left: 50%;
@@ -38,18 +47,17 @@ span.wide {
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     position: fixed;
-    width: 900px;
-    font-size: 16px;
+    width: 950px;
   }
 
-  .content p {
-    text-align: justify;
+  .content p a {
+    margin-bottom: 10px;
   }
+
   .content p a span {
     display: inline-block;
-    width: 110px;
     vertical-align: middle;
-    padding: 10px;
+    height: 50px;
   }
 
   #logo {
@@ -57,27 +65,52 @@ span.wide {
   }
 
   #logo img {
-    width: 200px;
+    width: 250px;
   }
 
   #about {
     float: right;
-    width: 630px;
+    width: 590px;
+  }
+  a#cyberpunk span{
+    margin-right: 43px;
+  }
+  a#gwent span{
+    margin-right: 38px;
+  }
+  a#thronebreaker span{
+    margin-right: 37px;
+  }
+  a#dyinglight span{
+    background-position: right;
+    width: 110px;
+  }
+  a#greenhell span{
+    margin-right: 41px;
+  }
+  a#torment span{
+    margin-right: 22px;
+  }
+  a#ethan span{
+    margin-right: 24px;
+  }
+  a#hellraid span{
+    background-position: right;
+    width: 86px;
   }
 }
 
 @media(max-width: 899px){
-  .content {
-    position: absolute;
-    font-size: 16px;
-    padding: 10px;
+  body {
+    background-image:url(images/mobile_bg_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   .content p a span {
     display: inline-block;
-    width: 110px;
     vertical-align: middle;
-    padding: 10px;
   }
 
   #logo {
@@ -87,14 +120,21 @@ span.wide {
   }
 
   #logo img {
-    width: 200px;
+    width: 150px;
   }
 
   #about {
     float: left;
   }
-  #footer {
-    font-size: 16px;
+
+  .content {
+    padding: 10px;
+  }
+
+  a span {
+    width: 120px;
+    height: 50px;
+    margin: 0px;
   }
 }
 
@@ -109,28 +149,26 @@ a span {
 
 a#cyberpunk span{
   background-image:url(images/RTL-www_assets-Cyberpunk.png);
-  width: 175px;
+  width: 137px;
 }
 a#gwent span{
   background-image:url(images/RTL-www_assets-Gwent.png);
-  width: 90px;
+  width: 73px;
 }
 a#thronebreaker span{
   background-image:url(images/RTL-www_assets-Thronebreaker.png);
-  width: 160px;
+  width: 140px;
 }
 a#dyinglight span{
   background-image:url(images/RTL-www_assets-DyingLight.png);
-  width: 100px;
-  background-position: right;
 }
 a#greenhell span{
   background-image:url(images/RTL-www_assets-GreenHell.png);
-  width: 180px;
+  width: 151px;
 }
 a#torment span{
   background-image:url(images/RTL-www_assets-Torment.png);
-  width: 120px;
+  width: 122px;
 }
 a#ethan span{
   background-image:url(images/RTL-www_assets-EthanCarter.png);
@@ -138,8 +176,6 @@ a#ethan span{
 }
 a#hellraid span{
   background-image:url(images/RTL-www_assets-Hellraid.png);
-  width: 100px;
-  background-position: right;
 }
 
 a#cyberpunk:hover span{
