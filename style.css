@@ -82,7 +82,7 @@ span.wide {
     margin-right: 37px;
   }
   a#dyinglight span{
-    background-position: right;
+    margin-right: 0px;
     width: 110px;
   }
   a#greenhell span{
@@ -95,7 +95,7 @@ span.wide {
     margin-right: 24px;
   }
   a#hellraid span{
-    background-position: right;
+    margin-right: 0px;
     width: 86px;
   }
 }
@@ -135,6 +135,10 @@ span.wide {
     width: 120px;
     height: 50px;
     margin: 0px;
+  }
+
+  .content p {
+    text-align: justify;
   }
 }
 
