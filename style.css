@@ -9,6 +9,7 @@ body {
 
 .content p {
   text-align: justify;
+  margin-top: 20px;
 }
 
 #footer {
@@ -65,7 +66,7 @@ span.wide {
   }
 
   #logo img {
-    width: 250px;
+    width: 270px;
   }
 
   #about {
