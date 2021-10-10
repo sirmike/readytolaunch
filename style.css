@@ -90,7 +90,6 @@ span.wide {
   }
   a#dyinglight span{
     margin-right: 0px;
-    width: 110px;
   }
   a#greenhell span{
     margin-right: 41px;
@@ -103,7 +102,6 @@ span.wide {
   }
   a#hellraid span{
     margin-right: 0px;
-    width: 86px;
   }
 }
 
@@ -143,9 +141,8 @@ span.wide {
   }
 
   a span {
-    width: 120px;
     height: 50px;
-    margin: 0px;
+    margin: 0px 10px 0px 0px;
   }
 
   .content p {
@@ -176,6 +173,7 @@ a#thronebreaker span{
 }
 a#dyinglight span{
   background-image:url(images/RTL-www_assets-DyingLight.png);
+  width: 110px;
 }
 a#greenhell span{
   background-image:url(images/RTL-www_assets-GreenHell.png);
@@ -191,6 +189,7 @@ a#ethan span{
 }
 a#hellraid span{
   background-image:url(images/RTL-www_assets-Hellraid.png);
+  width: 86px;
 }
 
 a#cyberpunk:hover span{
